@@ -6,3 +6,15 @@ function toggleButton() {
 }
 
 hamburgerButton.addEventListener('click', toggleButton)
+
+function viewMore() {
+  const btn = document.getElementById("viewBtn")
+  const moreProjects = document.getElementById("content");
+  if (moreProjects.style.display === "none") {
+    moreProjects.style.display = "inline";
+    btn.innerHTML = "View Less   <i class='fas fa-arrow-circle-up'></i>";
+  } else {
+    moreProjects.style.display = "none";
+    btn.innerHTML = "View More   <i class='fas fa-arrow-circle-down'></i>";
+  }
+}

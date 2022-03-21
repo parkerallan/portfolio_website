@@ -25,7 +25,7 @@ section {
 footer {
   background-color: rgb(0, 0, 0);
   border-top: #00AD89 solid 8px;
-  border-bottom: #00AD89 solid 5px;
+  border-bottom: #00AD89 solid 6px;
   color: whitesmoke;
   text-align: center;
   padding-top: 5px;
@@ -269,8 +269,15 @@ and (-webkit-device-pixel-ratio: 3) {
   height: 180px;
   }
 
+  img.graphic {
+    margin-top: 1157px;
+    width: 800;
+    height: 600;
+  }
+
   h1 {
-    font-size: 90px;
+    font-size: 80px;
+    
   }
 }
 

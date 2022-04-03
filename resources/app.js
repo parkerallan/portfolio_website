@@ -15,6 +15,6 @@ function viewMore() {
     btn.innerHTML = "View Less   <i class='fas fa-arrow-circle-up'></i>";
   } else {
     moreProjects.style.display = "none";
-    btn.innerHTML = "View More   <i class='fas fa-arrow-circle-down'></i>";
+    btn.innerHTML = "View Older Projects   <i class='fas fa-arrow-circle-down'></i>";
   }
 }

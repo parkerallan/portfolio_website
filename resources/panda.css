@@ -1,0 +1,139 @@
+.panda{
+  position: relative;
+  right: 15%;
+  height: 110px;
+  width: 120px;
+  background-color: white;
+  border-radius: 50%;
+  border:solid black 1px;
+}
+.panda-face{
+  position: relative;
+  background-color: white;
+  height: 90px;
+  width: 110px;
+  border-radius: 50%;
+  bottom: 30px;
+  left: 4px;
+  box-shadow: 0px 3px 3px black;
+}
+.left-ear, .right-ear{
+  position: relative;
+  background-color: black;
+  height: 25px;
+  width: 40px;
+  border-radius: 0px 0px 40px 40px;
+}
+.left-ear{
+  transform: rotate(145deg);
+  bottom: 9px;
+  right: 5px;
+}
+.right-ear{
+  transform: rotate(-145deg);
+  bottom: 34px;
+  left: 75px;
+}
+.left-eye, .right-eye{
+  position: relative;
+  background-color: black;
+  width: 33px;
+  height: 28px;
+  border-radius: 50%;
+}
+.left-eye{
+  bottom: 27px;
+  left: 12px;
+  transform: rotate(-15deg);
+}
+.right-eye{
+  bottom: 55px;
+  left: 67px;
+  transform: rotate(15deg)
+}
+.eyeball{
+  position: relative;
+  top: 5px;
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+}
+.nose{
+  position: relative;
+  height: 8px;
+  width: 15px;
+  background-color: black;
+  border-radius: 15px;
+  bottom: 52px;
+  left: 48px;
+}
+.left-hand, .right-hand{
+  position: relative;
+  width: 25px;
+  height: 43px;
+  background-color: black;
+  border-radius: 30%;
+}
+.left-hand{
+  transform: rotate(45deg);
+  bottom: 55px;
+  right: 25px;
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  
+}
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+.right-hand{
+  transform: rotate(-45deg);
+  bottom: 98px;
+  left: 120px;
+}
+.left-leg,.right-leg{
+  position: relative;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.left-leg{
+  bottom: 90px;
+}
+.right-leg{
+  bottom: 130px;
+  left: 75px;
+}
+.left-cheek, .right-cheek{
+  position: relative;
+  background-color: red;
+  opacity: 60%;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+.left-cheek{
+  bottom: 100px;
+  left: 18px;
+}
+.right-cheek{
+  bottom: 117px;
+  left: 75px;
+}
+.mouth{
+  position: relative;
+  transform: rotate(90deg);
+  bottom: 105px;
+  right: 4px;
+}
